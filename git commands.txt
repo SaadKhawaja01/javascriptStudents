@@ -1,4 +1,9 @@
+//for clone
+git clone 
+
+
 git branch -m Muhammad
+
 
 git add .
 
