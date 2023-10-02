@@ -17,7 +17,7 @@ function guessNumber() {
       alert(`Enter a valid number between 1 and 10`);
     }
   }
-  return `You've used all your attempts.`;
+  return `You've used all your attempts. The correct number was ${ranNum}.`;
 }
 
 let result = guessNumber();
