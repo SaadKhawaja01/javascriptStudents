@@ -8,10 +8,14 @@ function guessNumber() {
     if (!isNaN(guessInput) && guessInput >= 1 && guessInput <= 10) {
       if (guessInput === ranNum) {
         return alert(`Your guess is right!`);
-      } else if (guessInput > ranNum) {
-        alert(`Your guess is too high`);
-      } else if (guessInput < ranNum) {
-        alert(`Your guess is too low`);
+      } else if ((guessInput = ranNum + 1 || guessInput > ranNum + 2)) {
+        alert(`Your are close but guess is high`);
+      } else if (guessInput > ranNum + 2) {
+        alert(`Your  guess is too high`);
+      } else if ((guessInput = ranNum - 1 || guessInput > ranNum - 2)) {
+        alert(`Your are close but guess is  low`);
+      } else if (guessInput < ranNum - 2) {
+        alert(`Your  guess is too low`);
       }
     } else {
       alert(`Enter a valid number between 1 and 10`);
